@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>newline remover</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>PDF Newline Remover</h1>
+    <p class="description">
+      Paste text on the left to see the result with newlines removed on the right.
+    </p>
+
+    <div class="editor-wrapper">
+      <div class="panel">
+        <label for="inputText">Original Text</label>
+        <textarea
+          id="inputText"
+          placeholder="Paste your text here."
+        ></textarea>
+      </div>
+
+      <div class="panel">
+        <label for="outputText">Result (Newlines Removed)</label>
+        <textarea
+          id="outputText"
+          placeholder="Result will be displayed here."
+          readonly
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="button-row">
+      <button id="clearBtn" type="button">Clear All</button>
+      <button id="copyBtn" type="button">Copy Result</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
